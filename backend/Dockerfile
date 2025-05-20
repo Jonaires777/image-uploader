@@ -3,7 +3,7 @@ FROM golang:1.24
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
-# Copyt the go mod and sum files
+# Copy the go mod and sum files
 COPY go.mod go.sum ./
 
 # Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed
